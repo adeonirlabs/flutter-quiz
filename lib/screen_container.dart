@@ -17,7 +17,6 @@ class ScreenContainer extends StatelessWidget {
           Color.fromARGB(255, 27, 1, 107),
         ],
       )),
-      padding: const EdgeInsets.only(left: 32, top: 192, right: 32, bottom: 64),
       child: child,
     );
   }
