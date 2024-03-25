@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen(this.onStartQuiz, {super.key});
@@ -7,35 +8,39 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          Image.asset(
-            'assets/images/quiz-logo.png',
-            width: 240,
-            color: const Color.fromARGB(96, 255, 255, 255),
-          ),
-          const SizedBox(height: 32),
-          const Text(
-            'Learn Flutter the fun way!',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20,
+    return Container(
+      padding: const EdgeInsets.all(32),
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            Image.asset(
+              'assets/images/quiz-logo.png',
+              width: 240,
+              color: const Color.fromARGB(96, 255, 255, 255),
             ),
-          ),
-          const SizedBox(height: 32),
-          OutlinedButton(
-              onPressed: onStartQuiz,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 32,
-                  vertical: 8,
-                ),
+            const SizedBox(height: 32),
+            Text(
+              'Learn Flutter the fun way!',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.robotoSlab(
+                color: Colors.white,
+                fontSize: 24,
               ),
-              child: const Text('Start Quiz'))
-        ],
+            ),
+            const SizedBox(height: 32),
+            OutlinedButton(
+                onPressed: onStartQuiz,
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 32,
+                    vertical: 8,
+                  ),
+                ),
+                child: const Text('Start Quiz'))
+          ],
+        ),
       ),
     );
   }
