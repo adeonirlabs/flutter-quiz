@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:quiz/data/questions.dart';
+import 'package:quiz/questions_summary.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({super.key, required this.answers});
@@ -26,12 +27,19 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final summaryData = getSummaryData();
+    final totalQuestions = questions.length;
+    final correctAnswers = summaryData
+        .where((element) =>
+            element['selected_answer'] == element['correct_answer'])
+        .length;
+
     return Container(
-      padding: const EdgeInsets.only(left: 32, top: 192, right: 32, bottom: 64),
+      padding: const EdgeInsets.only(left: 32, top: 128, right: 32, bottom: 64),
       child: Column(
         children: [
           Text(
-            'You answered X out of Y questions correctly',
+            'You answered $correctAnswers out of $totalQuestions questions correctly!',
             textAlign: TextAlign.center,
             style: GoogleFonts.robotoSlab(
               color: Colors.white,
