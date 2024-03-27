@@ -1,16 +1,20 @@
-# quiz
+# Quiz
 
-A new Flutter project.
+| Start | Question | Result |
+| -------- | -------- | -------- |
+| <img src=".github/quiz-start.png" /> | <img src=".github/quiz-question.png" /> | <img src=".github/quiz-results.png" /> |
 
-## Getting Started
+## About the project
 
-This project is a starting point for a Flutter application.
+The Quiz app is a cross-platform application built using Flutter. The main feature of the application is a quiz that tests your knowledge about Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+It presents a series of questions, each with multiple choice answers. The questions cover various aspects of Flutter, such as the main building blocks of Flutter UIs, how Flutter UIs are built, the purpose of a StatefulWidget, and more.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+I'm following a Udemy's course, but it has some tweeks on the design and functionalities.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+
+- Test your knowledge with a series of questions about Flutter.
+- Multiple-choice answers for each question.
+- Learn more about Flutter's main building blocks and UI components.
+- Engaging and educational quiz experience.
