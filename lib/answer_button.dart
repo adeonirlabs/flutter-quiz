@@ -16,7 +16,7 @@ class AnswerButton extends StatelessWidget {
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
         foregroundColor: Colors.white,
-        backgroundColor: const Color.fromARGB(255, 103, 39, 205),
+        backgroundColor: const Color.fromARGB(255, 77, 72, 234),
         padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 4),
       ),
       child: Text(
