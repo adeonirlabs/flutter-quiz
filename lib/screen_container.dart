@@ -13,8 +13,8 @@ class ScreenContainer extends StatelessWidget {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
         colors: [
-          Color.fromARGB(255, 105, 43, 206),
-          Color.fromARGB(255, 27, 1, 107),
+          Color.fromARGB(255, 77, 72, 234),
+          Color.fromARGB(255, 5, 2, 99),
         ],
       )),
       child: child,
